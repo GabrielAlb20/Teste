@@ -5,7 +5,7 @@ Adapte o código do desafio 107, criando uma função adicional chamada 'moeda()
 import moeda
 
 # input_usuario = float(input("Digite o preço: \n"))
-input_usuario = 423
+input_usuario = float(input('Digite o preço: R$'))
 
 print(f"A metade de R$ {input_usuario} é {moeda.moeda(moeda.metade(input_usuario))}")
 print(f"O dobro de R$ {input_usuario} é {moeda.moeda(moeda.dobro(input_usuario))}")
