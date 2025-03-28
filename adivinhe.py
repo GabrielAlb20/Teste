@@ -3,7 +3,7 @@ import random
 numero_secreto = random.randint(1, 100)
 tentativas = 0
 
-print("🎯 Bem-vindo ao Jogo da Adivinhação!")
+print(" Bem-vindo ao Jogo da Adivinhação!")
 print("Tente adivinhar o número entre 1 e 100.")
 
 while True:
@@ -11,9 +11,9 @@ while True:
     tentativas += 1
 
     if tentativa < numero_secreto:
-        print("🔼 Tente um número maior!")
+        print(" Tente um número maior")
     elif tentativa > numero_secreto:
-        print("🔽 Tente um número menor!")
+        print(" Tente um número menor")
     else:
-        print(f"🎉 Parabéns! Você acertou o número {numero_secreto} em {tentativas} tentativas.")
+        print(f" Parabéns, Você acertou o número {numero_secreto} em {tentativas} tentativas.")
         break
