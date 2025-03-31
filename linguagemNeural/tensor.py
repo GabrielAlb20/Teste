@@ -14,6 +14,11 @@ def predict_message(message):
     # Aqui você pode usar embeddings para classificações ou outras tarefas
     return embeddings
 
+# Testar com uma mensagem de exemplo
+message = "Oi, como você está?"
+result = predict_message(message)
+print(result)
+
 # Para testar sem usar Docker, você pode criar um ambiente virtual localmente:
 # 1. Crie um ambiente virtual: `python -m venv venv`
 # 2. Ative o ambiente virtual:
@@ -21,8 +26,3 @@ def predict_message(message):
 #    - No macOS/Linux: `source venv/bin/activate`
 # 3. Instale as dependências necessárias: `pip install tensorflow tensorflow_hub tensorflow_text numpy`
 # 4. Execute o script diretamente no terminal: `python tensor.py`
-
-# Testar com uma mensagem de exemplo
-message = "Oi, como você está?"
-result = predict_message(message)
-print(result)
